@@ -1,0 +1,5 @@
+const wordreference = require('./../dist')
+const fs = require('fs')
+wordreference('Rainbow')
+.then(result => fs.writeFile("index.html",JSON.stringify(result,undefined,2)))
+.catch(result => console.log(result))
