@@ -21,7 +21,7 @@ var wr = require('wordreference-api');
  * @return {Object}      Object with the word data
  */
 wr('Rainbow');
-wr('Rainbow','en','fr').then((result)=> console.log);
+wr('Rainbow','en','fr').then((result)=> console.log(result));
 ```
 Return:
 ``` javascript
